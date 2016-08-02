@@ -46,11 +46,11 @@ Python study resource and practice code
 
 一个HTML文件，找出里面的**正文**。
 
-# 第 0009 题
+# 第 0009 题 : HTML文件找链接
 
 一个HTML文件，找出里面的**链接**。
 
-# 第 0010 题
+# 第 0010 题 : 生成验证码
 
 使用 Python 生成类似于下图中的**字母验证码图片**
 
@@ -58,7 +58,9 @@ Python study resource and practice code
 
 - [阅读资料](http://stackoverflow.com/questions/2823316/generate-a-random-letter-in-python)
 
-**第 0011 题：** 敏感词文本文件 filtered_words.txt，里面的内容为以下内容，当用户输入敏感词语时，则打印出 Freedom，否则打印出 Human Rights。
+# 第 0011 题 : 过滤敏感词
+
+敏感词文本文件 filtered_words.txt，里面的内容为以下内容，当用户输入敏感词语时，则打印出 Freedom，否则打印出 Human Rights。
 
     北京
     程序员
@@ -72,13 +74,25 @@ Python study resource and practice code
     sex
 	jiangge
 
-**第 0012 题：** 敏感词文本文件 filtered_words.txt，里面的内容 和 0011题一样，当用户输入敏感词语，则用 星号 * 替换，例如当用户输入「北京是个好城市」，则变成「**是个好城市」。
+# 第 0012 题 : 替换敏感词
 
-**第 0013 题：** 用 Python 写一个爬图片的程序，爬 [这个链接里的日本妹子图片 :-)](http://tieba.baidu.com/p/2166231880)
+敏感词文本文件 filtered_words.txt，里面的内容 和 0011题一样，当用户输入敏感词语，则用星号 \* 替换，例如当用户输入「北京是个好城市」，则变成「**是个好城市」。
+
+# 第 0013 题 : 爬图程序
+
+用 Python 写一个爬图片的程序
+
+爬 [这个链接里的妹子图片 :-)](http://tieba.baidu.com/p/2166231880)
+
+## requests库安装
+
+<http://docs.python-requests.org/en/latest/user/install/#install>
 
 - [参考代码](http://www.v2ex.com/t/61686 "参考代码")
 
-**第 0014 题：** 纯文本文件 student.txt为学生信息, 里面的内容（包括花括号）如下所示：
+# 第 0014 题
+
+纯文本文件 student.txt为学生信息, 里面的内容（包括花括号）如下所示：
 
     {
     	"1":["张三",150,120,100],
