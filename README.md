@@ -90,7 +90,7 @@ Python study resource and practice code
 
 - [参考代码](http://www.v2ex.com/t/61686 "参考代码")
 
-# 第 0014 题
+# 第 0014 题 : Jason To Excel
 
 纯文本文件 student.txt为学生信息, 里面的内容（包括花括号）如下所示：
 
@@ -104,9 +104,13 @@ Python study resource and practice code
 
 ![student.xls](http://i.imgur.com/nPDlpme.jpg)
 
-- [阅读资料](http://www.cnblogs.com/skynet/archive/2013/05/06/3063245.html) 腾讯游戏开发 XML 和 Excel 内容相互转换
+## openpyxl模块安装
 
-**第 0015 题：** 纯文本文件 city.txt为城市信息, 里面的内容（包括花括号）如下所示：
+    $ pip install openpyxl
+
+# 第 0015 题 : Jason To Excel
+
+纯文本文件 city.txt为城市信息, 里面的内容（包括花括号）如下所示：
 
     {
         "1" : "上海",
@@ -119,7 +123,9 @@ Python study resource and practice code
 ![city.xls](http://i.imgur.com/rOHbUzg.png)
 
 
-**第 0016 题：** 纯文本文件 numbers.txt, 里面的内容（包括方括号）如下所示：
+# 第 0016 题 : Jason To Excel
+
+纯文本文件 numbers.txt, 里面的内容（包括方括号）如下所示：
 
     [
     	[1, 82, 65535],
@@ -131,7 +137,9 @@ Python study resource and practice code
 
 ![numbers.xls](http://i.imgur.com/iuz0Pbv.png)
 
-**第 0017 题：** 将 第 0014 题中的 student.xls 文件中的内容写到 student.xml 文件中，如
+# 第 0017 题 : Excel To XML
+
+将 第 0014 题中的 student.xls 文件中的内容写到 student.xml 文件中，如
 
 下所示：
 
@@ -149,6 +157,11 @@ Python study resource and practice code
     }
     </students>
     </root>
+    
+## 安装需要模块
+    
+    $ sudo pip install xlrd
+    $ sudo pip install lxml
 
 - [阅读资料](http://www.cnblogs.com/skynet/archive/2013/05/06/3063245.html) 腾讯游戏开发 xml 和 Excel 相互转换
 
