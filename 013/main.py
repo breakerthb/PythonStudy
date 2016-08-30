@@ -35,8 +35,10 @@ def downloadImage(pic_url):
     for i in pic_url:
         request = urllib2.Request(i)
         data = urllib2.urlopen(request).read()
+        print(i)
         i = re.split('/', i)[-1]
         print(i)
+        
         path = dirct + '/' + i
         f = open(path, 'wb')
         f.write(data)
@@ -45,5 +47,6 @@ def downloadImage(pic_url):
     print('Done !')
 
 if __name__ == '__main__':
-    url = 'http://tieba.baidu.com/p/2166231880'
+    #url = 'http://tieba.baidu.com/p/2166231880'
+    url = 'http://tieba.baidu.com/p/1787902805'
     ReadURL(url)
