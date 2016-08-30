@@ -48,5 +48,5 @@ def downloadImage(pic_url):
 
 if __name__ == '__main__':
     #url = 'http://tieba.baidu.com/p/2166231880'
-    url = 'http://tieba.baidu.com/p/1787902805'
+    url = 'http://tieba.baidu.com/p/1787902805?pn=2'
     ReadURL(url)
