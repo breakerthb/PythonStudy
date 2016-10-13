@@ -165,7 +165,9 @@ Python study resource and practice code
 
 - [阅读资料](http://www.cnblogs.com/skynet/archive/2013/05/06/3063245.html) 腾讯游戏开发 xml 和 Excel 相互转换
 
-**第 0018 题：** 将 第 0015 题中的 city.xls 文件中的内容写到 city.xml 文件中，如下所示：
+# 第 0018 题 : xls to xml
+
+将 第 0015 题中的 city.xls 文件中的内容写到 city.xml 文件中，如下所示：
 
     <?xmlversion="1.0" encoding="UTF-8"?>
     <root>
@@ -181,7 +183,9 @@ Python study resource and practice code
     </citys>
     </root>
 
-**第 0019 题：** 将 第 0016 题中的 numbers.xls 文件中的内容写到 numbers.xml 文件中，如下
+# 第 0019 题 : xls to xml
+
+将 第 0016 题中的 numbers.xls 文件中的内容写到 numbers.xml 文件中，如下
 
 所示：
 
@@ -201,9 +205,13 @@ Python study resource and practice code
     </numbers>
     </root>
 
-**第 0020 题：** [登陆中国联通网上营业厅](http://iservice.10010.com/index_.html) 后选择「自助服务」 --> 「详单查询」，然后选择你要查询的时间段，点击「查询」按钮，查询结果页面的最下方，点击「导出」，就会生成类似于 2014年10月01日～2014年10月31日通话详单.xls 文件。写代码，对每月通话时间做个统计。
+# 第 0020 题
 
-**第 0021 题：** 通常，登陆某个网站或者 APP，需要使用用户名和密码。密码是如何加密后存储起来的呢？请使用 Python 对密码加密。
+[登陆中国联通网上营业厅](http://iservice.10010.com/index_.html) 后选择「自助服务」 --> 「详单查询」，然后选择你要查询的时间段，点击「查询」按钮，查询结果页面的最下方，点击「导出」，就会生成类似于 2014年10月01日～2014年10月31日通话详单.xls 文件。写代码，对每月通话时间做个统计。
+
+# 第 0021 题
+
+通常，登陆某个网站或者 APP，需要使用用户名和密码。密码是如何加密后存储起来的呢？请使用 Python 对密码加密。
 
 - 阅读资料 [用户密码的存储与 Python 示例](http://zhuoqiang.me/password-storage-and-python-example.html)
 
@@ -211,9 +219,13 @@ Python study resource and practice code
 
 - 阅读资料 [Python's safest method to store and retrieve passwords from a database](http://stackoverflow.com/questions/2572099/pythons-safest-method-to-store-and-retrieve-passwords-from-a-database)
 
-**第 0022 题：** iPhone 6、iPhone 6 Plus 早已上市开卖。请查看你写得 第 0005 题的代码是否可以复用。
+# 第 0022 题
 
-**第 0023 题：** 使用 Python 的 Web 框架，做一个 Web 版本 留言簿 应用。
+iPhone 6、iPhone 6 Plus 早已上市开卖。请查看你写得 第 0005 题的代码是否可以复用。
+
+# 第 0023 题
+
+使用 Python 的 Web 框架，做一个 Web 版本 留言簿 应用。
 
 [阅读资料：Python 有哪些 Web 框架](http://v2ex.com/t/151643#reply53)
 
