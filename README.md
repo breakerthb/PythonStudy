@@ -277,3 +277,7 @@ iPhone 6、iPhone 6 Plus 早已上市开卖。请查看你写得 第 0005 题的
 最终命令：
 
     $ python main.py ascii_dora.png
+    
+# 第 0027 题 : 用命令行实现游戏2048
+
+ref:<https://www.shiyanlou.com/courses/368/labs/1172/document>
