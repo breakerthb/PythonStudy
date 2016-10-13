@@ -255,3 +255,12 @@ iPhone 6、iPhone 6 Plus 早已上市开卖。请查看你写得 第 0005 题的
 
 3:文本-->电脑命令
 
+# 第 0026 题 : 图片转字符画
+
+需要使用PIL库完成，安装pillow
+
+    $ sudo apt-get update
+    $ sudo apt-get install python-dev
+    $ sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev \
+    libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk
+    $ sudo pip install pillow
