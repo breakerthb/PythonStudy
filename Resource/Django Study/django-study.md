@@ -7,8 +7,9 @@
 [Django环境搭建](https://www.zybuluo.com/breakerthb/note/399472) | 
 [Django基本命令(创建Project&APP)](https://www.zybuluo.com/breakerthb/note/403191) | 
 [Django视图](https://www.zybuluo.com/breakerthb/note/403319) |
-[Django URL](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/django-urls.md) | 
-[Django模板和参数传递](https://www.zybuluo.com/breakerthb/note/405298) | 
+[Django URLs](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/django-urls.md) | 
+[Django模板](https://www.zybuluo.com/breakerthb/note/405298) |
+[Django模板中的参数显示]() | 
 [Django数据库模型](https://www.zybuluo.com/breakerthb/note/405464) | 
 [Django自定义Field] | 
 [Django数据表更改] | 
