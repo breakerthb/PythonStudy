@@ -23,6 +23,10 @@
 [Django发送邮件] | 
 [Django常用插件](https://www.zybuluo.com/breakerthb/note/420158) | 
 
+[Django日志记录](http://www.cnblogs.com/ymjr/p/5539740.html) | 
+[Django全局变量的使用](http://www.cnblogs.com/ymjr/p/5539745.html) | 
+[Django上传文件](http://www.cnblogs.com/ymjr/p/5554825.html)
+
 
 ## 2. 中级教程
 
