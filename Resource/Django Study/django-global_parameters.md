@@ -1,4 +1,4 @@
-Django 全局变量
+# Django 全局变量
 
 # locals()
 
