@@ -37,7 +37,12 @@
 
 在setting.py文件中添加路径的全局变量：
 
-	STATIC_URL = '/static/'
+	STATIC_URL = 'static/'
+	
+*注意：*
+
+- 设置目录必须以“/”结尾，否则会报错
+- 不能写成'/static/',这代表绝对路径的根目录下static目录
 
 ## 模板文件中引用
 
@@ -47,7 +52,7 @@
 或
 
 	{% load staticfiles %}
-       <link rel="shortcut icon" href="{% static "assets/favicon.ico" %}">
+	<link rel="shortcut icon" href="{% static "assets/favicon.ico" %}">
 
 ## 在代码中引用
 

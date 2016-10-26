@@ -23,7 +23,7 @@
 [Django发送邮件] |   
 [Django常用插件](https://www.zybuluo.com/breakerthb/note/420158) |   
 
-[Django常用目录]() |    
+[Django常用目录](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/django-folders.md) |    
 [Django日志系统](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/django-log.md) |  
 [Django全局变量](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/django-global_parameters.md) |  
 [Django上传文件](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/django-uploadfile.md) |  
