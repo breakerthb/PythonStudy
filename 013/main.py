@@ -18,8 +18,14 @@ def ReadURL(oriURL):
     return 0
 
 def Imageurl(data):
+    '''
     re_Imageurl = re.compile(r'src="(http://imgsrc.baidu.com/forum/.*?)"')
     data = re_Imageurl.findall(data)  # 输出图片链接
+    '''
+    
+    patternString = r'http://.{0,50}\.jpg'  
+    re_Imageurl = re.compile(patternString)  
+    data = re_Imageurl.findall(data)
     
     downloadImage(data)
 
@@ -48,5 +54,6 @@ def downloadImage(pic_url):
 
 if __name__ == '__main__':
     #url = 'http://tieba.baidu.com/p/2166231880'
-    url = 'http://tieba.baidu.com/p/1787902805?pn=2'
+    #url = 'http://tieba.baidu.com/p/1787902805?pn=2'
+    url = 'http://bbs.tianya.cn/list-266-1.shtml'
     ReadURL(url)

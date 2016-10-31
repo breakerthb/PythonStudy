@@ -1,4 +1,5 @@
 [reference](http://www.ziqiangxuetang.com/django/django-tutorial.html)
+[Djanog-1.8.2文档](http://python.usyiyi.cn/documents/django_182/index.html)
 
 ## 1. 基础教程
 
@@ -9,6 +10,7 @@
 [Django视图](https://www.zybuluo.com/breakerthb/note/403319) |  
 [Django URLs](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/django-urls.md) |   
 [Django模板](https://www.zybuluo.com/breakerthb/note/405298) |  
+[Django Bootstrap]() |  
 [Django模板中的参数显示](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/django-para.md) |   
 [Django数据库模型](https://www.zybuluo.com/breakerthb/note/405464) |   
 [Django自定义Field] |   
@@ -31,17 +33,17 @@
 
 ## 2. 中级教程
 
-[Django数据导入](https://www.zybuluo.com/breakerthb/note/538554) | 
-[Django数据迁移](http://www.ziqiangxuetang.com/django/django-data-migration.html) | 
-[Django多数据库联用](http://www.ziqiangxuetang.com/django/django-multi-database.html) | 
+[Django数据导入](https://www.zybuluo.com/breakerthb/note/538554) |   
+[Django数据迁移](http://www.ziqiangxuetang.com/django/django-data-migration.html) |   
+[Django多数据库联用](http://www.ziqiangxuetang.com/django/django-multi-database.html) |   
 [Django用户注册系统]() | 
 [Django缓存系统]() | 
 [Django生成静态网页]() | 
 [Django安全]() | 
 [Django国际化]() | 
 [Django Session]() | 
-[Django传递数据给JS]() | 
-[Django Ajax]() | 
+[Django传递数据给JS]() |   
+[Django Ajax](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/dango-ajax.md) |   
 [Django Ajax CSRF认证]() | 
 [Django站点地图]() | 
 [只用Django数据库]() | 
