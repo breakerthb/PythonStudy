@@ -131,6 +131,35 @@ Django提供[django.contrib.staticfiles](http://python.usyiyi.cn/documents/djang
 	urlpatterns = [
 	    # ... the rest of your URLconf goes here ...
 	] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+	
+## 自定义静态目录
+
+默认的静态文件目录必须以static命名。如果我们需要把根目录下uploads目录变成静态目录怎么做呢？
+
+- 修改settings.py
+
+    #配置文件的上传路径
+    MEDIA_URL = '/uploads/' # 相对路径
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads') #绝对路径
+    
+- 修改urls.py
+
+    from django.conf import settings
+    from django.conf.urls.static import static
+
+    from web import views as web_views
+
+    urlpatterns = [
+        url(r'^admin/', include(admin.site.urls)),
+        url(r'^$', web_views.home, name='home'),
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    
+- 模板文件
+
+    {% load staticfiles %}
+    <img src="/uploads/deda7af0x9cd8x11e6xaa1ex0242ac1117d0.jpg"></img>
+    
+这里就可以正常访问自定义目录中的文件了。
 
 # 引用其他静态文件
 

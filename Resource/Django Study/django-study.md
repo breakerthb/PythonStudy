@@ -19,7 +19,7 @@
 [Django后台](https://www.zybuluo.com/breakerthb/note/422692) |   
 [Django表单](https://www.zybuluo.com/breakerthb/note/405631) |  
 [Django配置](https://www.zybuluo.com/breakerthb/note/406541) |   
-[Django静态文件](https://www.zybuluo.com/breakerthb/note/406555) |   
+[Django静态文件管理](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/django-StaticFiles.md) |   
 [Django部署Apache] |   
 [Django部署Nginx](https://www.zybuluo.com/breakerthb/note/442540) |   
 [Django发送邮件] |   

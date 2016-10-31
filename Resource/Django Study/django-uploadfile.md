@@ -193,3 +193,8 @@ UploadedFile是类文件对象，具有以下方法和属性：
 # Ajax实现文件上传
 
 ref:<http://www.cnblogs.com/pycode/p/upload.html>
+
+# 参考
+
+了解更多请参考：
+<http://python.usyiyi.cn/documents/django_182/topics/http/file-uploads.html>
