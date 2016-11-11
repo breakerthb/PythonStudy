@@ -10,7 +10,7 @@
 [Django视图](https://www.zybuluo.com/breakerthb/note/403319) |  
 [Django URLs](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/django-urls.md) |   
 [Django模板](https://www.zybuluo.com/breakerthb/note/405298) |  
-[Django Bootstrap]() |  
+[Django Bootstrap](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/django-bootstrap.md) |  
 [Django模板中的参数显示](https://github.com/breakerthb/PythonStudy/blob/master/Resource/Django%20Study/django-para.md) |   
 [Django数据库模型](https://www.zybuluo.com/breakerthb/note/405464) |   
 [Django自定义Field] |   
