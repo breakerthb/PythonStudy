@@ -76,7 +76,7 @@ if __name__=='__main__':
         
         if cnt % 1800 == 1:
             Alive()
-            cnt = 0
+            #cnt = 0
         
         time.sleep(1)
         
