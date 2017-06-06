@@ -10,7 +10,6 @@ from html.parser import HTMLParser
 from html.entities import name2codepoint
 
 class MyHTMLParser(HTMLParser):
-
     def handle_starttag(self, tag, attrs):
         if tag == 'a':
             for (variables, value) in attrs:

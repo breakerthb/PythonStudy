@@ -9,7 +9,7 @@ if __name__=='__main__':
     mail = MyMail()
     receivers = []
     receivers.append(config.sendTo)
-    mail.Init(config.smtpServer, config.smtpUser, config.smtpPwd, config.smtpUser, receivers)
+    mail.Init(config.smtpServer, config.smtpPort, config.smtpUser, config.smtpPwd, config.smtpUser, receivers)
     
     mail_msg = """
         <p>Python 邮件发送测试...</p>
