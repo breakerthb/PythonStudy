@@ -18,23 +18,34 @@ class MyMail:
         self.receivers = receivers  # 接收邮件 ['23456789@qq.com']
         
     def Send(self, msg, subject):
-        message = MIMEText(msg, 'plain', 'utf-8')
+        #message = MIMEText(msg, 'plain', 'utf-8')
+        message = MIMEText(msg, 'html', 'utf-8')
         message['From'] = Header(self.sender, 'utf-8')
         message['To'] =  Header(self.receivers[0], 'utf-8')
         message['Subject'] = Header(subject, 'utf-8')
  
-        print(message)
+        #print("Message : \n" + str(message))
  
         try:
+            '''
             smtpObj = smtplib.SMTP()
-            print("connect : %s : %s" % (self.host, self.port))
             smtpObj.connect(self.host, self.port)
-            smtpObj.starttls() #####
-            print("start login : %s - %s" % (self.user, self.pw))
+            print("-> connect success")
+            '''
+            #print("----> Connect Mail Server : %s : %s" % (self.host, self.port))
+            smtpObj = smtplib.SMTP(host=self.host, port=self.port)
+            #smtpObj.set_debuglevel(1)
+            smtpObj.ehlo()
+            smtpObj.starttls()
+            #print("----> login : %s - %s" % (self.user, self.pw))
             smtpObj.login(self.user, self.pw)
-            print("start send")
+            #print("----> start send")
             smtpObj.sendmail(self.sender, self.receivers, message.as_string())
-            print ("邮件发送成功")
+            print ("Send Success!")
+        except smtplib.SMTPHeloError as e:
+            print(e)
         except smtplib.SMTPException as e:
-            print ("Error: 无法发送邮件")
-            print (e)
+            print("Error: Send Failed")
+            print(e)
+        else:
+            smtpObj.close()

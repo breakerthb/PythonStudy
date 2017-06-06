@@ -283,3 +283,6 @@ ref:<https://www.shiyanlou.com/courses/368/labs/1172/document>
 
 # 第 0028 题 ： 用SMTP协议发邮件
 
+查看gmail SMTP协议是否可用：
+
+    $ nc -v -w 10 -z smtp.gmail.com 587

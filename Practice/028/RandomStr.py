@@ -3,6 +3,16 @@
 
 import random, string
 
+def randomSelect(lstLetters, length):
+    if type(lstLetters) != list:
+        lstLetters = list(lstLetters)
+    
+    #print(lstLetters)
+    random.shuffle(lstLetters)
+    ret = ''.join(lstLetters[:length])
+    #print(ret)
+    return ret
+
 def randomSequence(num, length):
     letters = string.ascii_letters + string.digits + '@#$%&*'
     random_seq = []
