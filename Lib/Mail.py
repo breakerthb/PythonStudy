@@ -5,10 +5,11 @@ import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
  
-class MyMail:
+class Mail:
     def __init__(self):
         self.subject = ""
- 
+    
+    # Init parameters
     def Init(self, host, port, user, pw, sender, receivers):
         self.host = host    #设置服务器
         self.port = port
@@ -16,6 +17,22 @@ class MyMail:
         self.pw = pw        #口令 
         self.sender = sender
         self.receivers = receivers  # 接收邮件 ['23456789@qq.com']
+    
+    # Check password
+    def Check(self):
+        try:
+            #print("----> Connect Mail Server : %s : %s" % (self.host, self.port))
+            smtpObj = smtplib.SMTP(host=self.host, port=self.port)
+            smtpObj.ehlo()
+            smtpObj.starttls()
+            #print("----> login : %s - %s" % (self.user, self.pw))
+            smtpObj.login(self.user, self.pw)
+            return 1
+        except smtplib.SMTPException as e:
+            print(e)
+            return 0
+        else:
+            smtpObj.close()
         
     def Send(self, msg, subject):
         #message = MIMEText(msg, 'plain', 'utf-8')
@@ -42,10 +59,13 @@ class MyMail:
             #print("----> start send")
             smtpObj.sendmail(self.sender, self.receivers, message.as_string())
             print ("Send Success!")
+            return 1
         except smtplib.SMTPHeloError as e:
             print(e)
+            return 0
         except smtplib.SMTPException as e:
             print("Error: Send Failed")
             print(e)
+            return 0
         else:
             smtpObj.close()

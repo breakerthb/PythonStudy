@@ -3,6 +3,7 @@
 
 import urllib.request
 
+# 得到url的html页面
 def GetHtml(url):
     resp=urllib.request.urlopen(url)
     return resp.read()
@@ -23,7 +24,7 @@ def ReadMail(oriURL):
     return lstMails
 
 def GetFromGitHub():
-    url = 'https://raw.githubusercontent.com/breakerthb/PythonStudy/master/Practice/028/MailList.md'
+    url = 'https://raw.githubusercontent.com/breakerthb/PythonStudy/Practice/028/MailList.md'
     return ReadMail(url)
 
     

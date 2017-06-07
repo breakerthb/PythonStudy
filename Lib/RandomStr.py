@@ -3,6 +3,7 @@
 
 import random, string
 
+# 从lstLetters中随机找出lenghth个字符
 def randomSelect(lstLetters, length):
     if type(lstLetters) != list:
         lstLetters = list(lstLetters)
@@ -13,6 +14,7 @@ def randomSelect(lstLetters, length):
     #print(ret)
     return ret
 
+# 返回num个长度为length的随机字符串
 def randomSequence(num, length):
     letters = string.ascii_letters + string.digits + '@#$%&*'
     random_seq = []

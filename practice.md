@@ -286,3 +286,7 @@ ref:<https://www.shiyanlou.com/courses/368/labs/1172/document>
 查看gmail SMTP协议是否可用：
 
     $ nc -v -w 10 -z smtp.gmail.com 587
+    
+# 第 0029 题 ： 判断用户名密码
+
+

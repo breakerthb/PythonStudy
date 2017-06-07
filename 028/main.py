@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 #_*_coding:utf8_*_
 
+import sys
+sys.path.append("../Lib")
+
 import Config as config
 from Mail import *
 import RandomStr
@@ -13,7 +16,7 @@ def GetRandText():
     try:
         with open('input.txt') as fileIn:
             string = fileIn.read();
-            return RandomStr.randomSelect(string, 500)
+            return RandomStr.randomSelect(string, 5000)
     except:
         print("Error : file open error")
         
@@ -32,9 +35,11 @@ def GetRandPic():
         print("Error : pic file open error")
 
 def SendOneTime():
+    cnt = 0
     lstMails = HTML.GetFromGitHub()
+    #print(lstMails)
     
-    mail = MyMail()
+    mail = Mail()
     receivers = []
     receivers.append(config.sendTo)
     
@@ -51,15 +56,19 @@ def SendOneTime():
         mail_msg = mail_msg + pic
         
         print(mailFrom)
-        mail.Init(config.smtpServer, config.smtpPort, mailFrom, config.smtpPwd, mailFrom, receivers)
-        mail.Send(mail_msg, subject)
+        mail.Init(config.smtpGmailServer, config.smtpGmailPort, mailFrom, config.smtpPwd, mailFrom, receivers)
+        ret = mail.Send(mail_msg, subject)
+        
+        if ret == 1:
+            cnt += 1;
     
+    return len(lstMails) - cnt
     
 def Alive():
-    mail = MyMail()
+    mail = Mail()
     receivers = []
     receivers.append("breakerthb@126.com")
-    mail.Init(config.smtpServer, config.smtpPort, config.smtpUser, config.smtpPwd, config.smtpUser, receivers)
+    mail.Init(config.smtpGmailServer, config.smtpGmailPort, config.smtpGmailUser, config.smtpPwd, config.smtpGmailUser, receivers)
     
     mail_msg = """
         <p>I am alive!</p>
@@ -68,15 +77,24 @@ def Alive():
     print("I am alive")
     
 if __name__=='__main__':
+    # Wait for can
+    while 1:
+         if SendOneTime() == 0:
+            break
+         print("wait")
+         time.sleep(3600)
+        
+    # Start Send
     cnt = 0
     while 1:
         cnt += 1
         print("\n----- ----- -----\nSend %s times\n" % cnt)
-        SendOneTime()
+        if SendOneTime() > 2:
+            break
         
-        if cnt % 1800 == 1:
+        if cnt % 500 == 1:
             Alive()
-            #cnt = 0
-        
-        time.sleep(1)
-        
+
+        time.sleep(4)
+    
+    print("Send : " + cnt)    
